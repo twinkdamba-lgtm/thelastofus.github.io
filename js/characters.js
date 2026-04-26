@@ -1,4 +1,4 @@
-fetch('../xml/characters.xml')
+fetch('xml/characters.xml')
     .then(response => response.text())
     .then(str => {
         const parser = new DOMParser();
