@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Персонажи</title>
+    <link rel="stylesheet" href="css/characters.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="The Last of Us Logo" width="40" height="40">
+            </a>
+            <ul class="nav-links">
+                <li><a href="story.html">Сюжет</a></li>
+                <li><a href="characters.html" class="active">Персонажи</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">О игре</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="page-header">
+        <img src="img/charachetimage.jpg" alt="Dark Atmosphere">
+        <div class="page-header-overlay">
+            <h1>Персонажи</h1>
+        </div>
+    </div>
+
+    
+    <div class="content">
+        <div class="container">
+            <p style="font-size: 1.25rem; color: #374151; margin-bottom: 3rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Познакомьтесь с героями, которые борются за выживание в постапокалиптическом мире
+            </p>
+
+            <div class="characters-grid" id="characters-container">
+                
+                <!--подгрузка данных с XML файла characters.xml-->
+                
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 The Last of Us</p>
+            <img src="img/dev.png" alt="Naughty Dog">
+        </div>
+    </footer>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/characters.js"></script>
+</body>
+</html>

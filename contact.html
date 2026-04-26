@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Связаться с нами</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="The Last of Us Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="story.html">Сюжет</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">О игре</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <img src="img/wire.png" alt="Contact Us">
+        <div class="page-header-overlay">
+            <h1>Связаться с нами</h1>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="content-container">
+            <section>
+                <h2>Отправьте нам сообщение</h2>
+
+                <p class="contact-description">
+                    Есть вопросы об игре? Хотите поделиться своим мнением? Мы всегда рады услышать Вас!
+                </p>
+
+                <div class="contact-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="messageCount">0</div>
+                        <div class="stat-label">Сообщений отправлено</div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Выберите тему</option>
+                            <option value="Общий вопрос">Общий вопрос</option>
+                            <option value="Вопрос о геймплее">Вопрос о геймплее</option>
+                            <option value="Вопрос о сюжете">Вопрос о сюжете</option>
+                            <option value="Техническая поддержка">Техническая поддержка</option>
+                            <option value="Отзыв об игре">Отзыв об игре</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span>Подписаться на новости о The Last of Us</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Отправить сообщение</button>
+                </form>
+            </section>
+
+            <section class="messages-section">
+                <h2>История сообщений</h2>
+
+                <div id="savedMessages" class="saved-messages">
+                    <p class="empty-message">История сообщений пуста</p>
+                </div>
+            </section>
+
+            <section class="contacts-section">
+                <h2>Другие способы связи</h2>
+
+                <div class="contact-info-grid">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>support@thelastofus.com</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">💬</div>
+                        <h3>Социальные сети</h3>
+                        <p>@TheLastOfUs</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🎮</div>
+                        <h3>Форум сообщества</h3>
+                        <p>community.thelastofus.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 The Last of Us</p>
+            <img src="img/dev.png" alt="Naughty Dog">
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

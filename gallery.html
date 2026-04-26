@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Галерея</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="The Last of Us Logo" width="40" height="40">
+            </a>
+            <ul class="nav-links">
+                <li><a href="story.html">Сюжет</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="about.html">О игре</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+  
+    <div class="gallery-header">
+        <h1>Галерея</h1>
+        <p>Путешествие по миру The Last of Us</p>
+    </div>
+
+    
+    <div class="gallery-grid">
+        
+        <div class="gallery-item">
+            <img src="img/gal1.jpg" alt="The Last of Us">
+            <div class="gallery-overlay">
+                <div>
+                    <h3>The Last of Us</h3>
+                    <p>Официальный постер игры</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="img/gal2.jpg" alt="Заброшенный город">
+            <div class="gallery-overlay">
+                <div>
+                    <h3>Заброшенный город</h3>
+                    <p>Природа возвращает свои права</p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="gallery-item">
+            <img src="img/gal3.jpg" alt="Разрушенные здания">
+            <div class="gallery-overlay">
+                <div>
+                    <h3>Разрушенные здания</h3>
+                    <p>Следы былой цивилизации</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="img/gal7.jpg" alt="Грибковая инфекция">
+            <div class="gallery-overlay">
+                <div>
+                    <h3>Сплоченность</h3>
+                    <p>Сплоченность - помощь в выживании</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="img/gal8.jpg" alt="Путешествие">
+            <div class="gallery-overlay">
+                <div>
+                    <h3>Путешествие</h3>
+                    <p>Долгий путь через всю Америку</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="img/gal9.jpg" alt="Темная атмосфера">
+            <div class="gallery-overlay">
+                <div>
+                    <h3>Темная атмосфера</h3>
+                    <p>Опасность на каждом шагу</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 The Last of Us</p>
+            <img src="img/dev.png" alt="Naughty Dog">
+        </div>
+    </footer>
+
+    <!-- переключалка галареи -->
+    <div id="lightboxModal" class="lightbox-modal" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="Закрыть">✕</button>
+        <button type="button" class="lightbox-nav lightbox-prev" aria-label="Предыдущее фото">‹</button>
+        <figure class="lightbox-inner">
+            <img id="lightboxImage" class="lightbox-image" alt="">
+            <figcaption id="lightboxCaption" class="lightbox-caption"></figcaption>
+        </figure>
+        <button type="button" class="lightbox-nav lightbox-next" aria-label="Следующее фото">›</button>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
