@@ -29,15 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const messageCard = document.createElement('div'); //создание блока
         messageCard.className = 'message-card';
 
-        messageCard.innerHTML = `
+       messageCard.innerHTML = `
             <h3>${name}</h3>
             <p class="message-email">${email}</p>
 
             <span class="message-subject">${subject}</span>
-
+            ${newsletter ? '<span class="newsletter-badge">Подписан на рассылку</span>' : ''} 
             <p class="message-text">${message}</p>
 
-            ${newsletter ? '<span class="newsletter-badge">Подписан на рассылку</span>' : ''} 
         `;//подписка на сообщество игры
 
         savedMessages.prepend(messageCard); //добавление нового элемента в НАЧАЛО
