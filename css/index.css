@@ -78,11 +78,15 @@ nav {
 }
 
 .nav-links {
+  display: none;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
-  list-style: none;
 }
 
 .nav-links a {
