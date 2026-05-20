@@ -12,7 +12,7 @@
   }
 
   .nav-links {
-    display: none;
+    display: none !important;
     position: fixed;
     right: -100%;
     top: 0;
@@ -28,7 +28,7 @@
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
 
     &.active {
-      display: flex;
+      display: flex !important;
       right: 0;
     }
 

@@ -469,7 +469,7 @@ footer {
     display: flex;
   }
   .nav-links {
-    display: none;
+    display: none !important;
     position: fixed;
     right: -100%;
     top: 0;
@@ -491,9 +491,9 @@ footer {
             box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
   }
   .nav-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     right: 0;
   }
   .nav-links a {

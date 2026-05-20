@@ -62,12 +62,10 @@ nav {
 }
 
 .nav-links {
-  display: none;
+  display: flex;
   gap: 2rem;
   list-style: none;
-  &.active {
-    display: flex;
-  }
+
   a {
     font-size: 1.125rem;
     color: $color-gray-700;
@@ -213,6 +211,7 @@ footer {
     transform: rotate(-45deg) translate(7px, -7px);
   }
 }
+
 
 .trailer-modal {
   position: fixed;
